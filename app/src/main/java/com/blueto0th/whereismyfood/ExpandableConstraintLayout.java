@@ -64,6 +64,10 @@ public class ExpandableConstraintLayout extends ConstraintLayout {
         this.childMovementPercent = percent;
     }
 
+    public boolean isExpanded() {
+        return isExpanded;
+    }
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
